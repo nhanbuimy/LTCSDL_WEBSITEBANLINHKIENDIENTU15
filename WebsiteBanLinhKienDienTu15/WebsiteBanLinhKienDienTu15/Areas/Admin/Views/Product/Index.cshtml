@@ -1,0 +1,114 @@
+﻿@using WebsiteBanLinhKienDienTu15.Models;
+@model IEnumerable<Product>
+@{
+	ViewData["Title"] = "Index";
+	ViewData["ControllerName"] = ViewContext.RouteData.Values["controller"].ToString();
+}
+
+<br />
+<br />
+<div class="row">
+	<div class="col-6">
+		<h2 class="text-light">Product List</h2>
+	</div>
+	<div class="col-6 text-end">
+		<a asp-action="Create" class="btn btn-RedShop" style="color:white"><i class="fa-solid fa-plus"></i>&nbsp; Add New Product</a>
+	</div>
+</div>
+
+<form method="post">
+	<div class="row">
+		<div class="col-3">
+			<input type="text" class="form-control" name="productName" placeholder="Name contains..." />
+		</div>
+		<div class="col-3">
+			<input type="number" class="form-control" name="lowAmount" placeholder="Price higher than..." />
+		</div>
+		<div class="col-3">
+			<input type="number" class="form-control" name="highAmount" placeholder="Price lower than..." />
+		</div>
+		<div class="col-3">
+			<input type="submit" value="Search" class="btn btn-gold" />
+		</div>
+	</div>
+</form>
+<br />
+<div>
+	<table class="table table-striped border" id="myTable">
+		<thead>
+			<tr class="redShop text-light">
+				<th>
+					@Html.DisplayNameFor(c => c.ProductName)
+				</th>
+				<th>
+					@Html.DisplayNameFor(c => c.Price)
+				</th>
+				<th>
+					@Html.DisplayNameFor(c => c.ProductColor)
+				</th>
+				<th>
+					@Html.DisplayNameFor(c => c.IsAvailable)
+				</th>
+				<th>
+					@Html.DisplayNameFor(c => c.CategoryID)
+				</th>
+				<th>
+					@Html.DisplayNameFor(c => c.SpecialTagID)
+				</th>
+				<th></th>
+				<th></th>
+			</tr>
+		</thead>
+
+		<tbody>
+			@foreach (var item in Model)
+			{
+				<tr class="bg-white text-black" style="opacity: 90%;">
+					<td>@item.ProductName</td>
+					<td>@string.Format("{0:N0} VND", item.Price)</td>
+					<td>@item.ProductColor</td>
+					@if (@item.IsAvailable)
+					{
+						<td>Yes</td>
+					}
+					else
+					{
+						<td>No</td>
+					}
+					<td>@item.Category.CategoryName</td>
+					<td>@item.SpecialTag.SpecialTagName</td>
+					<td>
+						<partial name="_ButtonPartial" model="@item.ProductID" view-data="ViewData"></partial>
+					</td>
+				</tr>
+			}
+		</tbody>
+	</table>
+</div>
+
+@section Scripts {
+	<script src="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
+	<script type="text/javascript">
+		$(function () {
+			let table = new DataTable('#myTable', {
+				lengthMenu: [[5, 10, 25, 50, -1], [5, 10, 25, 50, "All"]],
+				dom: '<"top"i><t><"bottom"lBp><"clear">',
+				buttons: [
+					'csv', 'excel', 'pdf', 'print'
+				]
+			});
+			var msgC = '@TempData["create"]'
+			var msgE = '@TempData["edit"]'
+			var msgD = '@TempData["delete"]'
+			if (msgC) {
+				alertify.success(msgC);
+			}
+			else if (msgE) {
+				alertify.success(msgE);
+			}
+			else if (msgD) {
+				alertify.error(msgD);
+			}
+		})
+	</script>
+}

@@ -1,0 +1,50 @@
+﻿@model WebsiteBanLinhKienDienTu15.Areas.Admin.Models.RoleUserAssignVm
+@{
+	ViewData["Title"] = "Assign";
+}
+<br />
+
+<h2 class="text-light">Assign Role</h2>
+
+@if (!string.IsNullOrEmpty(ViewBag.message))
+{
+	<div class="alert alert-danger">@ViewBag.message</div>
+}
+
+<form asp-action="Assign" method="post" id="roleForm" enctype="multipart/form-data">
+	<div class="p-4 rounded border text-light fw-bold">
+		<div asp-validation-summary="ModelOnly" class="text-danger">
+		</div>
+		<br />
+		<div class="mb-3 row">
+			<div class="col-2">
+				<label asp-for="UserID"></label>
+			</div>
+			<div class="col-5">
+				<select asp-for="UserID" asp-items="ViewBag.UserID" class="form-control"></select>
+				@* <input asp-for="CategoryID" class="form-control" /> *@
+			</div>
+			<span asp-validation-for="UserID" class="text-danger"></span>
+		</div>
+		<div class="mb-3 row">
+			<div class="col-2">
+				<label asp-for="RoleID"></label>
+			</div>
+			<div class="col-5">
+				<select asp-for="RoleID" asp-items="ViewBag.RoleID" class="form-control"></select>
+				@* <input asp-for="SpecialTagID" class="form-control" /> *@
+			</div>
+			<span asp-validation-for="RoleID" class="text-danger"></span>
+		</div>
+		<div class="mb-3">
+			<input type="submit" class="btn btn-RedShop" value="Assign" />
+			<a asp-action="Index" class="btn btn-gold">Back to List</a>
+		</div>
+	</div>
+</form>
+
+@section Scripts {
+	@{
+		await Html.RenderPartialAsync("_ValidationScriptsPartial.cshtml");
+	}
+}

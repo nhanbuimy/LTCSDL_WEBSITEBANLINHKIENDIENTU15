@@ -1,0 +1,58 @@
+﻿@using WebsiteBanLinhKienDienTu15.Models;
+@model IEnumerable<SpecialTag>
+@{
+	ViewData["Title"] = "Index";
+	ViewData["ControllerName"] = ViewContext.RouteData.Values["controller"].ToString();
+}
+
+<br />
+<br />
+<div class="row">
+	<div class="col-6">
+		<h2 class="text-light">Brand List</h2>
+	</div>
+	<div class="col-6 text-end">
+		<a asp-action="Create" class="btn btn-RedShop" style="color:white"><i class="fa-solid fa-plus"></i>&nbsp; New Brand</a>
+	</div>
+</div>
+<br />
+<div>
+	<table class="table table-striped border">
+		<tr class="redShop">
+			<th class="text-light">
+				Brand Names
+			</th>
+			<th></th>
+			<th></th>
+		</tr>
+		@foreach (var item in Model)
+		{
+			<tr class="bg-white" style="opacity: 90%;">
+				<td class="text-black">@item.SpecialTagName</td>
+				<td>
+					<partial name="_ButtonPartial" model="@item.SpecialTagID", view-data="ViewData"></partial>
+				</td>
+			</tr>
+		}
+	</table>
+</div>
+
+@section Scripts {
+	<script src="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
+	<script type="text/javascript">
+		$(function () {
+			var msgC = '@TempData["create"]'
+			var msgE = '@TempData["edit"]'
+			var msgD = '@TempData["delete"]'
+			if (msgC) {
+				alertify.success(msgC);
+			}
+			else if (msgE) {
+				alertify.success(msgE);
+			}
+			else if (msgD) {
+				alertify.error(msgD);
+			}
+		})
+	</script>
+}

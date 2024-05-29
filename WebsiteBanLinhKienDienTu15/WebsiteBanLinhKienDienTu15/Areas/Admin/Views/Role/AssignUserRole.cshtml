@@ -1,0 +1,52 @@
+﻿@{
+	ViewData["Title"] = "Assigned User Role";
+	ViewData["ControllerName"] = ViewContext.RouteData.Values["controller"].ToString();
+}
+
+<br />
+<br />
+<div class="row">
+	<div class="col-6">
+		<h2 class="text-light">Assigned User Role</h2>
+	</div>
+	<div class="col-6 text-end">
+		<a asp-action="Assign" class="btn btn-RedShop"><i class="fa-regular fa-pen-to-square"></i>&nbsp; Assign Role</a>
+		<a asp-action="Index" class="btn btn-gold"><i class="fa-solid fa-house"></i>&nbsp; Back to List</a>
+	</div>
+</div>
+<br />
+<div>
+	<table class="table table-striped border">
+		<tr class="redShop text-light">
+			<th>Username</th>
+			<th>Role name</th>
+		</tr>
+		@foreach (var item in ViewBag.UserRoles)
+		{
+			<tr class="bg-white text-black" style="opacity: 80%;">
+				<td>@item.UserName</td>
+				<td>@item.RoleName</td>
+			</tr>
+		}
+	</table>
+</div>
+
+@section Scripts {
+	<script src="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
+	<script type="text/javascript">
+		$(function () {
+			var msgC = '@TempData["create"]'
+			var msgA = '@TempData["assign"]'
+			var msgD = '@TempData["delete"]'
+			if (msgC) {
+				alertify.success(msgC);
+			}
+			else if (msgA) {
+				alertify.success(msgA);
+			}
+			else if (msgD) {
+				alertify.error(msgD);
+			}
+		})
+	</script>
+}

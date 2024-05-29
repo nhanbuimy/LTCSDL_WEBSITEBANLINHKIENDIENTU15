@@ -1,0 +1,200 @@
+﻿@model List<dynamic>
+@{
+    ViewData["Title"] = "Index";
+}
+
+<nav class="navbar navbar-expand-lg navbar-light black-bg" style="border-radius: 10px">
+    <div class="container-fluid">
+        <!-- Left side of the navbar -->
+        <div class="navbar-nav me-auto">
+            <h2 class="text-light">Statistics</h2>
+        </div>
+
+        <!-- Right side of the navbar -->
+        <div class="dropdown ml-auto">
+            <!-- Dropdown button -->
+            <button class="btn btn-outline-wb dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Choose Report
+            </button>
+            <div class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#" id="productsInCategoryReport">Amount of Products in Each Category</a>
+                <a class="dropdown-item" href="#" id="productsInBrandReport">Amount of Products in Each Brand</a>
+                <a class="dropdown-item" href="#" id="totalIncomeByCate">Total Income for Each Category</a>
+                <a class="dropdown-item" href="#" id="totalIncomeByBrand">Total Income for Each Brand</a>
+                <a class="dropdown-item" href="#" id="monthlyIncomeReport">Total Income by Month</a>
+                <!-- Add more options for different types of reports -->
+            </div>
+        </div>
+    </div>
+</nav>
+
+<div class="container">
+    <div class="row">
+        <!-- Left side - Chart -->
+        <div class="col-lg-9">
+            <div>
+                <canvas id="reportChart" width="400" height="400"></canvas>
+            </div>
+        </div>
+
+        <!-- Right side - Chart info -->
+        <div class="col-lg-3">
+            <div class="card text-black">
+                <div class="card-header fw-bold">Chart Info</div>
+                <div id="chartInfo" class="card-body">
+                    <!-- Information about the chart will be dynamically inserted here -->
+                    Choose a report to start!
+                </div>
+            </div>
+            <!-- Add chart info here -->
+        </div>
+    </div>
+</div>
+
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+
+@* <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script> *@
+<script>
+    $(document).ready(function () {
+        $('#productsInCategoryReport').on('click', function (e) {
+            e.preventDefault();
+            fetchChartData("@Url.Action("ProductsInCategory", "Stats")", "Number of Products in Each Category", "pie");
+        });
+
+        $('#productsInBrandReport').on('click', function (e) {
+            e.preventDefault();
+            fetchChartData("@Url.Action("ProductsInBrand", "Stats")", "Number of Products in Each Brand", "pie");
+        });
+
+        $('#totalIncomeByCate').on('click', function (e) {
+            e.preventDefault();
+            fetchChartData("@Url.Action("GetTotalAmountByCategory", "Stats")", "Total Income for Each Category", "pie");
+        });
+
+        $('#totalIncomeByBrand').on('click', function (e) {
+            e.preventDefault();
+            fetchChartData("@Url.Action("GetTotalAmountByBrand", "Stats")", "Total Income for Each Brand", "pie");
+        });
+
+        $('#monthlyIncomeReport').on('click', function (e) {
+            e.preventDefault();
+            fetchChartData("@Url.Action("GetMonthlyIncome", "Stats")", "Total Income by Month", "bar");
+        });
+
+        function getRandomColor() {
+            const r = Math.floor(Math.random() * 256);
+            const g = Math.floor(Math.random() * 256);
+            const b = Math.floor(Math.random() * 256);
+            const a = 0.9; // Change this value for more or less transparency (0.0 - fully transparent, 1.0 - fully opaque)
+            return `rgba(${r}, ${g}, ${b}, ${a})`;
+        }
+
+        function fetchChartData(url, title, chartType) {
+            $.ajax({
+                type: "POST",
+                url: url,
+                dataType: "json",
+                success: function (data) {
+                    console.log(data);
+                    createChart(data, title, chartType);
+                },
+                error: function (error) {
+                    console.error("Error fetching data:", error);
+                }
+            });
+        }
+
+        function createChart(data, title, chartType) {
+            var labels = data.map(item => item.label);
+            var values = data.map(item => item.value);
+            var backgroundColors = chartType === 'bar' ? 'rgba(0, 123, 255, 0.9)' : data.map(() => getRandomColor());
+
+            var ctx = document.getElementById("reportChart").getContext("2d");
+
+            // Destroy existing chart instance if it exists
+            if (window.reportChart) {
+                window.reportChart.destroy();
+            }
+
+            window.reportChart = new Chart(ctx, {
+                type: chartType,
+                data: {
+                    labels: labels,
+                    datasets: [{
+                        data: values,
+                        backgroundColor: backgroundColors
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    plugins: {
+                        legend: {
+                            display: false // Disable built-in legend
+                        },
+                        title: {
+                            display: true,
+                            text: title,
+                            color: 'white', // Set title text color to white
+                            font: {
+                                size: 18
+                            }
+                        }
+                    },
+                    scales: chartType === 'bar' ? {
+                        x: {
+                            ticks: {
+                                color: 'white' // X-axis labels color
+                            },
+                            grid: {
+                                color: 'rgba(255, 255, 255, 1)' // X-axis grid color
+                            }
+                        },
+                        y: {
+                            beginAtZero: true,
+                            ticks: {
+                                color: 'white' // Y-axis labels color
+                            },
+                            grid: {
+                                color: 'rgba(255, 255, 255, 1)' // Y-axis grid color
+                            }
+                        }
+                    } : {}
+                }
+            });
+            // Create custom legend
+            createCustomLegend(labels, values, chartType);
+        }
+
+        function createCustomLegend(labels, values, chartType) {
+            const chartInfo = document.getElementById('chartInfo');
+            chartInfo.innerHTML = ''; // Clear any existing legend
+
+            labels.forEach((label, index) => {
+                const legendItem = document.createElement('div');
+                legendItem.style.display = 'flex';
+                legendItem.style.alignItems = 'center';
+                legendItem.style.marginBottom = '10px';
+
+                const colorBox = document.createElement('span');
+                colorBox.style.display = 'inline-block';
+                colorBox.style.width = '20px';
+                colorBox.style.height = '20px';
+                colorBox.style.backgroundColor = colorBox.style.backgroundColor = chartType === 'bar' ? 'rgba(0, 123, 255, 0.9)' : getRandomColor();;
+                colorBox.style.marginRight = '10px';
+
+                const labelText = document.createElement('span');
+                labelText.style.color = 'black';
+                labelText.textContent = `${label}: ${values[index]}`;
+
+                legendItem.appendChild(colorBox);
+                legendItem.appendChild(labelText);
+                chartInfo.appendChild(legendItem);
+            });
+        }
+
+        window.reportChart = null;
+    });
+</script>

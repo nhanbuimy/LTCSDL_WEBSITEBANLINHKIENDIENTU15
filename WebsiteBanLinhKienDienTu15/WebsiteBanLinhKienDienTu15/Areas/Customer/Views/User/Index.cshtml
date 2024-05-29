@@ -1,0 +1,83 @@
+﻿@using WebsiteBanLinhKienDienTu15.Models;
+@model IEnumerable<ApplicationUser>
+@{
+	ViewData["Title"] = "Index";
+	ViewData["ControllerName"] = ViewContext.RouteData.Values["controller"].ToString();
+}
+
+<br />
+<br />
+<div class="row">
+	<div class="col-6">
+		<h2 class="text-light">User List</h2>
+	</div>
+	<div class="col-6">
+
+	</div>
+</div>
+<br />
+<div>
+	<table class="table table-striped border">
+		<tr class="redShop text-light">
+			<th>Name</th>
+			<th>Username</th>
+			<th>Status</th>
+			<th></th>
+		</tr>
+		@foreach (var item in Model)
+		{
+			<tr class="bg-white text-black" style="opacity: 90%;">
+				<td>@item.FirstName @item.LastName</td>
+				<td>@item.UserName</td>
+				@if (item.LockoutEnd > DateTime.Now && item.LockoutEnd != null)
+				{
+					<td>Inactive</td>
+					<td style="width: 100px">
+						<div class="btn-group">
+							<a asp-action="Active" class="btn btn-RedShop" asp-route-id="@item.Id">
+								<i class="fa-solid fa-unlock"></i>
+							</a>
+							<a asp-action="Delete" class="btn btn-gold" asp-route-id="@item.Id">
+								<i class="fa-regular fa-trash-can"></i>
+							</a>
+						</div>
+					</td>
+				}
+				else
+				{
+					<td>Active</td>
+					<td style="width: 100px">
+						<div class="btn-group">
+							<a asp-action="Details" class="btn btn-RedShop" asp-route-id="@item.Id">
+								<i class="fa-solid fa-list"></i>
+							</a>
+							<a asp-action="Lockout" class="btn btn-gold" asp-route-id="@item.Id">
+								<i class="fa-solid fa-lock"></i>
+							</a>
+						</div>
+					</td>
+				}
+			</tr>
+		}
+	</table>
+</div>
+
+@section Scripts {
+	<script src="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
+	<script type="text/javascript">
+		$(function () {
+			var msgL = '@TempData["lockout"]'
+			var msgA = '@TempData["active"]'
+			var msgD = '@TempData["delete"]'
+			if (msgL) {
+				alertify.success(msgL);
+			}
+			else if (msgA) {
+				alertify.success(msgA);
+			}
+			else if (msgD) {
+				alertify.error(msgD);
+			}
+		})
+	</script>
+}

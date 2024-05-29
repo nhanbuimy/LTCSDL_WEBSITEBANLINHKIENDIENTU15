@@ -1,0 +1,693 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\finaltest\\WebSiteBanLinhKienDT15\\WebsiteBanLinhKienDienTu15\\WebsiteBanLinhKienDienTu15\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\WebsiteBanLinhKienDienTu15.bundle.scp.css",
+      "PackagePath": "staticwebassets\\WebsiteBanLinhKienDienTu15.bundle.scp.css"
+    },
+    {
+      "Id": "D:\\finaltest\\WebSiteBanLinhKienDT15\\WebsiteBanLinhKienDienTu15\\WebsiteBanLinhKienDienTu15\\wwwroot\\Images\\DTsony.png",
+      "PackagePath": "staticwebassets\\Images\\DTsony.png"
+    },
+    {
+      "Id": "D:\\finaltest\\WebSiteBanLinhKienDT15\\WebsiteBanLinhKienDienTu15\\WebsiteBanLinhKienDienTu15\\wwwroot\\Images\\OnePlus10green.png",
+      "PackagePath": "staticwebassets\\Images\\OnePlus10green.png"
+    },
+    {
+      "Id": "D:\\finaltest\\WebSiteBanLinhKienDT15\\WebsiteBanLinhKienDienTu15\\WebsiteBanLinhKienDienTu15\\wwwroot\\Images\\a1.png",
+      "PackagePath": "staticwebassets\\Images\\a1.png"
+    },
+    {
+      "Id": "D:\\finaltest\\WebSiteBanLinhKienDT15\\WebsiteBanLinhKienDienTu15\\WebsiteBanLinhKienDienTu15\\wwwroot\\Images\\a2.png",
+      "PackagePath": "staticwebassets\\Images\\a2.png"
+    },
+    {
+      "Id": "D:\\finaltest\\WebSiteBanLinhKienDT15\\WebsiteBanLinhKienDienTu15\\WebsiteBanLinhKienDienTu15\\wwwroot\\Images\\a3.png",
+      "PackagePath": "staticwebassets\\Images\\a3.png"
+    },
+    {
+      "Id": "D:\\finaltest\\WebSiteBanLinhKienDT15\\WebsiteBanLinhKienDienTu15\\WebsiteBanLinhKienDienTu15\\wwwroot\\Images\\a4.png",
+      "PackagePath": "staticwebassets\\Images\\a4.png"
+    },
+    {
+      "Id": "D:\\finaltest\\WebSiteBanLinhKienDT15\\WebsiteBanLinhKienDienTu15\\WebsiteBanLinhKienDienTu15\\wwwroot\\Images\\a5.png",
+      "PackagePath": "staticwebassets\\Images\\a5.png"
+    },
+    {
+      "Id": "D:\\finaltest\\WebSiteBanLinhKienDT15\\WebsiteBanLinhKienDienTu15\\WebsiteBanLinhKienDienTu15\\wwwroot\\Images\\a6.png",
+      "PackagePath": "staticwebassets\\Images\\a6.png"
+    },
+    {
+      "Id": "D:\\finaltest\\WebSiteBanLinhKienDT15\\WebsiteBanLinhKienDienTu15\\WebsiteBanLinhKienDienTu15\\wwwroot\\Images\\a7.png",
+      "PackagePath": "staticwebassets\\Images\\a7.png"
+    },
+    {
+      "Id": "D:\\finaltest\\WebSiteBanLinhKienDT15\\WebsiteBanLinhKienDienTu15\\WebsiteBanLinhKienDienTu15\\wwwroot\\Images\\a8.png",
+      "PackagePath": "staticwebassets\\Images\\a8.png"
+    },
+    {
+      "Id": "D:\\finaltest\\WebSiteBanLinhKienDT15\\WebsiteBanLinhKienDienTu15\\WebsiteBanLinhKienDienTu15\\wwwroot\\Images\\a9.png",
+      "PackagePath": "staticwebassets\\Images\\a9.png"
+    },
+    {
+      "Id": "D:\\finaltest\\WebSiteBanLinhKienDT15\\WebsiteBanLinhKienDienTu15\\WebsiteBanLinhKienDienTu15\\wwwroot\\Images\\app1.png",
+      "PackagePath": "staticwebassets\\Images\\app1.png"
+    },
+    {
+      "Id": "D:\\finaltest\\WebSiteBanLinhKienDT15\\WebsiteBanLinhKienDienTu15\\WebsiteBanLinhKienDienTu15\\wwwroot\\Images\\app2.png",
+      "PackagePath": "staticwebassets\\Images\\app2.png"
+    },
+    {
+      "Id": "D:\\finaltest\\WebSiteBanLinhKienDT15\\WebsiteBanLinhKienDienTu15\\WebsiteBanLinhKienDienTu15\\wwwroot\\Images\\app3.png",
+      "PackagePath": "staticwebassets\\Images\\app3.png"
+    },
+    {
+      "Id": "D:\\finaltest\\WebSiteBanLinhKienDT15\\WebsiteBanLinhKienDienTu15\\WebsiteBanLinhKienDienTu15\\wwwroot\\Images\\app4.png",
+      "PackagePath": "staticwebassets\\Images\\app4.png"
+    },
+    {
+      "Id": "D:\\finaltest\\WebSiteBanLinhKienDT15\\WebsiteBanLinhKienDienTu15\\WebsiteBanLinhKienDienTu15\\wwwroot\\Images\\app5.png",
+      "PackagePath": "staticwebassets\\Images\\app5.png"
+    },
+    {
+      "Id": "D:\\finaltest\\WebSiteBanLinhKienDT15\\WebsiteBanLinhKienDienTu15\\WebsiteBanLinhKienDienTu15\\wwwroot\\Images\\auth_bg.jpg",
+      "PackagePath": "staticwebassets\\Images\\auth_bg.jpg"
+    },
+    {
+      "Id": "D:\\finaltest\\WebSiteBanLinhKienDT15\\WebsiteBanLinhKienDienTu15\\WebsiteBanLinhKienDienTu15\\wwwroot\\Images\\auth_bg_2.jpg",
+      "PackagePath": "staticwebassets\\Images\\auth_bg_2.jpg"
+    },
+    {
+      "Id": "D:\\finaltest\\WebSiteBanLinhKienDT15\\WebsiteBanLinhKienDienTu15\\WebsiteBanLinhKienDienTu15\\wwwroot\\Images\\available.png",
+      "PackagePath": "staticwebassets\\Images\\available.png"
+    },
+    {
+      "Id": "D:\\finaltest\\WebSiteBanLinhKienDT15\\WebsiteBanLinhKienDienTu15\\WebsiteBanLinhKienDienTu15\\wwwroot\\Images\\aw9.jpg",
+      "PackagePath": "staticwebassets\\Images\\aw9.jpg"
+    },
+    {
+      "Id": "D:\\finaltest\\WebSiteBanLinhKienDT15\\WebsiteBanLinhKienDienTu15\\WebsiteBanLinhKienDienTu15\\wwwroot\\Images\\aw9.png",
+      "PackagePath": "staticwebassets\\Images\\aw9.png"
+    },
+    {
+      "Id": "D:\\finaltest\\WebSiteBanLinhKienDT15\\WebsiteBanLinhKienDienTu15\\WebsiteBanLinhKienDienTu15\\wwwroot\\Images\\bg.jpg",
+      "PackagePath": "staticwebassets\\Images\\bg.jpg"
+    },
+    {
+      "Id": "D:\\finaltest\\WebSiteBanLinhKienDT15\\WebsiteBanLinhKienDienTu15\\WebsiteBanLinhKienDienTu15\\wwwroot\\Images\\bg_nh.png",
+      "PackagePath": "staticwebassets\\Images\\bg_nh.png"
+    },
+    {
+      "Id": "D:\\finaltest\\WebSiteBanLinhKienDT15\\WebsiteBanLinhKienDienTu15\\WebsiteBanLinhKienDienTu15\\wwwroot\\Images\\bg_white.jpg",
+      "PackagePath": "staticwebassets\\Images\\bg_white.jpg"
+    },
+    {
+      "Id": "D:\\finaltest\\WebSiteBanLinhKienDT15\\WebsiteBanLinhKienDienTu15\\WebsiteBanLinhKienDienTu15\\wwwroot\\Images\\bp1.png",
+      "PackagePath": "staticwebassets\\Images\\bp1.png"
+    },
+    {
+      "Id": "D:\\finaltest\\WebSiteBanLinhKienDT15\\WebsiteBanLinhKienDienTu15\\WebsiteBanLinhKienDienTu15\\wwwroot\\Images\\bp2.png",
+      "PackagePath": "staticwebassets\\Images\\bp2.png"
+    },
+    {
+      "Id": "D:\\finaltest\\WebSiteBanLinhKienDT15\\WebsiteBanLinhKienDienTu15\\WebsiteBanLinhKienDienTu15\\wwwroot\\Images\\bp3.png",
+      "PackagePath": "staticwebassets\\Images\\bp3.png"
+    },
+    {
+      "Id": "D:\\finaltest\\WebSiteBanLinhKienDT15\\WebsiteBanLinhKienDienTu15\\WebsiteBanLinhKienDienTu15\\wwwroot\\Images\\bp4.png",
+      "PackagePath": "staticwebassets\\Images\\bp4.png"
+    },
+    {
+      "Id": "D:\\finaltest\\WebSiteBanLinhKienDT15\\WebsiteBanLinhKienDienTu15\\WebsiteBanLinhKienDienTu15\\wwwroot\\Images\\bp5.png",
+      "PackagePath": "staticwebassets\\Images\\bp5.png"
+    },
+    {
+      "Id": "D:\\finaltest\\WebSiteBanLinhKienDT15\\WebsiteBanLinhKienDienTu15\\WebsiteBanLinhKienDienTu15\\wwwroot\\Images\\camondt.png",
+      "PackagePath": "staticwebassets\\Images\\camondt.png"
+    },
+    {
+      "Id": "D:\\finaltest\\WebSiteBanLinhKienDT15\\WebsiteBanLinhKienDienTu15\\WebsiteBanLinhKienDienTu15\\wwwroot\\Images\\canonr5.png",
+      "PackagePath": "staticwebassets\\Images\\canonr5.png"
+    },
+    {
+      "Id": "D:\\finaltest\\WebSiteBanLinhKienDT15\\WebsiteBanLinhKienDienTu15\\WebsiteBanLinhKienDienTu15\\wwwroot\\Images\\dam18.jpg",
+      "PackagePath": "staticwebassets\\Images\\dam18.jpg"
+    },
+    {
+      "Id": "D:\\finaltest\\WebSiteBanLinhKienDT15\\WebsiteBanLinhKienDienTu15\\WebsiteBanLinhKienDienTu15\\wwwroot\\Images\\di15.png",
+      "PackagePath": "staticwebassets\\Images\\di15.png"
+    },
+    {
+      "Id": "D:\\finaltest\\WebSiteBanLinhKienDT15\\WebsiteBanLinhKienDienTu15\\WebsiteBanLinhKienDienTu15\\wwwroot\\Images\\dtgg.png",
+      "PackagePath": "staticwebassets\\Images\\dtgg.png"
+    },
+    {
+      "Id": "D:\\finaltest\\WebSiteBanLinhKienDT15\\WebsiteBanLinhKienDienTu15\\WebsiteBanLinhKienDienTu15\\wwwroot\\Images\\fuxa5.png",
+      "PackagePath": "staticwebassets\\Images\\fuxa5.png"
+    },
+    {
+      "Id": "D:\\finaltest\\WebSiteBanLinhKienDT15\\WebsiteBanLinhKienDienTu15\\WebsiteBanLinhKienDienTu15\\wwwroot\\Images\\ggblack.png",
+      "PackagePath": "staticwebassets\\Images\\ggblack.png"
+    },
+    {
+      "Id": "D:\\finaltest\\WebSiteBanLinhKienDT15\\WebsiteBanLinhKienDienTu15\\WebsiteBanLinhKienDienTu15\\wwwroot\\Images\\huawatgt4.jpg",
+      "PackagePath": "staticwebassets\\Images\\huawatgt4.jpg"
+    },
+    {
+      "Id": "D:\\finaltest\\WebSiteBanLinhKienDT15\\WebsiteBanLinhKienDienTu15\\WebsiteBanLinhKienDienTu15\\wwwroot\\Images\\huawei2.png",
+      "PackagePath": "staticwebassets\\Images\\huawei2.png"
+    },
+    {
+      "Id": "D:\\finaltest\\WebSiteBanLinhKienDT15\\WebsiteBanLinhKienDienTu15\\WebsiteBanLinhKienDienTu15\\wwwroot\\Images\\huaweiyellow.png",
+      "PackagePath": "staticwebassets\\Images\\huaweiyellow.png"
+    },
+    {
+      "Id": "D:\\finaltest\\WebSiteBanLinhKienDT15\\WebsiteBanLinhKienDienTu15\\WebsiteBanLinhKienDienTu15\\wwwroot\\Images\\hw60p.jpg",
+      "PackagePath": "staticwebassets\\Images\\hw60p.jpg"
+    },
+    {
+      "Id": "D:\\finaltest\\WebSiteBanLinhKienDT15\\WebsiteBanLinhKienDienTu15\\WebsiteBanLinhKienDienTu15\\wwwroot\\Images\\ip13promax.png",
+      "PackagePath": "staticwebassets\\Images\\ip13promax.png"
+    },
+    {
+      "Id": "D:\\finaltest\\WebSiteBanLinhKienDT15\\WebsiteBanLinhKienDienTu15\\WebsiteBanLinhKienDienTu15\\wwwroot\\Images\\ip14plus.png",
+      "PackagePath": "staticwebassets\\Images\\ip14plus.png"
+    },
+    {
+      "Id": "D:\\finaltest\\WebSiteBanLinhKienDT15\\WebsiteBanLinhKienDienTu15\\WebsiteBanLinhKienDienTu15\\wwwroot\\Images\\ip15blue.png",
+      "PackagePath": "staticwebassets\\Images\\ip15blue.png"
+    },
+    {
+      "Id": "D:\\finaltest\\WebSiteBanLinhKienDT15\\WebsiteBanLinhKienDienTu15\\WebsiteBanLinhKienDienTu15\\wwwroot\\Images\\ip15hong.png",
+      "PackagePath": "staticwebassets\\Images\\ip15hong.png"
+    },
+    {
+      "Id": "D:\\finaltest\\WebSiteBanLinhKienDT15\\WebsiteBanLinhKienDienTu15\\WebsiteBanLinhKienDienTu15\\wwwroot\\Images\\ip15pm.jpg",
+      "PackagePath": "staticwebassets\\Images\\ip15pm.jpg"
+    },
+    {
+      "Id": "D:\\finaltest\\WebSiteBanLinhKienDT15\\WebsiteBanLinhKienDienTu15\\WebsiteBanLinhKienDienTu15\\wwwroot\\Images\\ip15promax.png",
+      "PackagePath": "staticwebassets\\Images\\ip15promax.png"
+    },
+    {
+      "Id": "D:\\finaltest\\WebSiteBanLinhKienDT15\\WebsiteBanLinhKienDienTu15\\WebsiteBanLinhKienDienTu15\\wwwroot\\Images\\ip15promaxtitan.png",
+      "PackagePath": "staticwebassets\\Images\\ip15promaxtitan.png"
+    },
+    {
+      "Id": "D:\\finaltest\\WebSiteBanLinhKienDT15\\WebsiteBanLinhKienDienTu15\\WebsiteBanLinhKienDienTu15\\wwwroot\\Images\\ip15tim.png",
+      "PackagePath": "staticwebassets\\Images\\ip15tim.png"
+    },
+    {
+      "Id": "D:\\finaltest\\WebSiteBanLinhKienDT15\\WebsiteBanLinhKienDienTu15\\WebsiteBanLinhKienDienTu15\\wwwroot\\Images\\iphone-14-128gb-vnA.png",
+      "PackagePath": "staticwebassets\\Images\\iphone-14-128gb-vnA.png"
+    },
+    {
+      "Id": "D:\\finaltest\\WebSiteBanLinhKienDT15\\WebsiteBanLinhKienDienTu15\\WebsiteBanLinhKienDienTu15\\wwwroot\\Images\\iphone-14-pro-max-tim.png",
+      "PackagePath": "staticwebassets\\Images\\iphone-14-pro-max-tim.png"
+    },
+    {
+      "Id": "D:\\finaltest\\WebSiteBanLinhKienDT15\\WebsiteBanLinhKienDienTu15\\WebsiteBanLinhKienDienTu15\\wwwroot\\Images\\ipm2.jpg",
+      "PackagePath": "staticwebassets\\Images\\ipm2.jpg"
+    },
+    {
+      "Id": "D:\\finaltest\\WebSiteBanLinhKienDT15\\WebsiteBanLinhKienDienTu15\\WebsiteBanLinhKienDienTu15\\wwwroot\\Images\\ipxs.png",
+      "PackagePath": "staticwebassets\\Images\\ipxs.png"
+    },
+    {
+      "Id": "D:\\finaltest\\WebSiteBanLinhKienDT15\\WebsiteBanLinhKienDienTu15\\WebsiteBanLinhKienDienTu15\\wwwroot\\Images\\lapdell.png",
+      "PackagePath": "staticwebassets\\Images\\lapdell.png"
+    },
+    {
+      "Id": "D:\\finaltest\\WebSiteBanLinhKienDT15\\WebsiteBanLinhKienDienTu15\\WebsiteBanLinhKienDienTu15\\wwwroot\\Images\\lapdell1.png",
+      "PackagePath": "staticwebassets\\Images\\lapdell1.png"
+    },
+    {
+      "Id": "D:\\finaltest\\WebSiteBanLinhKienDT15\\WebsiteBanLinhKienDienTu15\\WebsiteBanLinhKienDienTu15\\wwwroot\\Images\\lapdell2.png",
+      "PackagePath": "staticwebassets\\Images\\lapdell2.png"
+    },
+    {
+      "Id": "D:\\finaltest\\WebSiteBanLinhKienDT15\\WebsiteBanLinhKienDienTu15\\WebsiteBanLinhKienDienTu15\\wwwroot\\Images\\lapdell3.png",
+      "PackagePath": "staticwebassets\\Images\\lapdell3.png"
+    },
+    {
+      "Id": "D:\\finaltest\\WebSiteBanLinhKienDT15\\WebsiteBanLinhKienDienTu15\\WebsiteBanLinhKienDienTu15\\wwwroot\\Images\\lapdell4.png",
+      "PackagePath": "staticwebassets\\Images\\lapdell4.png"
+    },
+    {
+      "Id": "D:\\finaltest\\WebSiteBanLinhKienDT15\\WebsiteBanLinhKienDienTu15\\WebsiteBanLinhKienDienTu15\\wwwroot\\Images\\lapdell5.png",
+      "PackagePath": "staticwebassets\\Images\\lapdell5.png"
+    },
+    {
+      "Id": "D:\\finaltest\\WebSiteBanLinhKienDT15\\WebsiteBanLinhKienDienTu15\\WebsiteBanLinhKienDienTu15\\wwwroot\\Images\\lelepho.jpg",
+      "PackagePath": "staticwebassets\\Images\\lelepho.jpg"
+    },
+    {
+      "Id": "D:\\finaltest\\WebSiteBanLinhKienDT15\\WebsiteBanLinhKienDienTu15\\WebsiteBanLinhKienDienTu15\\wwwroot\\Images\\log_bg.png",
+      "PackagePath": "staticwebassets\\Images\\log_bg.png"
+    },
+    {
+      "Id": "D:\\finaltest\\WebSiteBanLinhKienDT15\\WebsiteBanLinhKienDienTu15\\WebsiteBanLinhKienDienTu15\\wwwroot\\Images\\m87x.jpg",
+      "PackagePath": "staticwebassets\\Images\\m87x.jpg"
+    },
+    {
+      "Id": "D:\\finaltest\\WebSiteBanLinhKienDT15\\WebsiteBanLinhKienDienTu15\\WebsiteBanLinhKienDienTu15\\wwwroot\\Images\\mayanh1.png",
+      "PackagePath": "staticwebassets\\Images\\mayanh1.png"
+    },
+    {
+      "Id": "D:\\finaltest\\WebSiteBanLinhKienDT15\\WebsiteBanLinhKienDienTu15\\WebsiteBanLinhKienDienTu15\\wwwroot\\Images\\mayanh2.png",
+      "PackagePath": "staticwebassets\\Images\\mayanh2.png"
+    },
+    {
+      "Id": "D:\\finaltest\\WebSiteBanLinhKienDT15\\WebsiteBanLinhKienDienTu15\\WebsiteBanLinhKienDienTu15\\wwwroot\\Images\\mayanh3.png",
+      "PackagePath": "staticwebassets\\Images\\mayanh3.png"
+    },
+    {
+      "Id": "D:\\finaltest\\WebSiteBanLinhKienDT15\\WebsiteBanLinhKienDienTu15\\WebsiteBanLinhKienDienTu15\\wwwroot\\Images\\mayanh4.png",
+      "PackagePath": "staticwebassets\\Images\\mayanh4.png"
+    },
+    {
+      "Id": "D:\\finaltest\\WebSiteBanLinhKienDT15\\WebsiteBanLinhKienDienTu15\\WebsiteBanLinhKienDienTu15\\wwwroot\\Images\\mayanh5.png",
+      "PackagePath": "staticwebassets\\Images\\mayanh5.png"
+    },
+    {
+      "Id": "D:\\finaltest\\WebSiteBanLinhKienDT15\\WebsiteBanLinhKienDienTu15\\WebsiteBanLinhKienDienTu15\\wwwroot\\Images\\mayanhsony.png",
+      "PackagePath": "staticwebassets\\Images\\mayanhsony.png"
+    },
+    {
+      "Id": "D:\\finaltest\\WebSiteBanLinhKienDT15\\WebsiteBanLinhKienDienTu15\\WebsiteBanLinhKienDienTu15\\wwwroot\\Images\\mayanhsonya7.png",
+      "PackagePath": "staticwebassets\\Images\\mayanhsonya7.png"
+    },
+    {
+      "Id": "D:\\finaltest\\WebSiteBanLinhKienDT15\\WebsiteBanLinhKienDienTu15\\WebsiteBanLinhKienDienTu15\\wwwroot\\Images\\mp16m3.jpg",
+      "PackagePath": "staticwebassets\\Images\\mp16m3.jpg"
+    },
+    {
+      "Id": "D:\\finaltest\\WebSiteBanLinhKienDT15\\WebsiteBanLinhKienDienTu15\\WebsiteBanLinhKienDienTu15\\wwwroot\\Images\\msigf63.jpg",
+      "PackagePath": "staticwebassets\\Images\\msigf63.jpg"
+    },
+    {
+      "Id": "D:\\finaltest\\WebSiteBanLinhKienDT15\\WebsiteBanLinhKienDienTu15\\WebsiteBanLinhKienDienTu15\\wwwroot\\Images\\not-available.png",
+      "PackagePath": "staticwebassets\\Images\\not-available.png"
+    },
+    {
+      "Id": "D:\\finaltest\\WebSiteBanLinhKienDT15\\WebsiteBanLinhKienDienTu15\\WebsiteBanLinhKienDienTu15\\wwwroot\\Images\\oneplusblue.png",
+      "PackagePath": "staticwebassets\\Images\\oneplusblue.png"
+    },
+    {
+      "Id": "D:\\finaltest\\WebSiteBanLinhKienDT15\\WebsiteBanLinhKienDienTu15\\WebsiteBanLinhKienDienTu15\\wwwroot\\Images\\oppoblue.png",
+      "PackagePath": "staticwebassets\\Images\\oppoblue.png"
+    },
+    {
+      "Id": "D:\\finaltest\\WebSiteBanLinhKienDT15\\WebsiteBanLinhKienDienTu15\\WebsiteBanLinhKienDienTu15\\wwwroot\\Images\\oppoproblue.png",
+      "PackagePath": "staticwebassets\\Images\\oppoproblue.png"
+    },
+    {
+      "Id": "D:\\finaltest\\WebSiteBanLinhKienDT15\\WebsiteBanLinhKienDienTu15\\WebsiteBanLinhKienDienTu15\\wwwroot\\Images\\pad1.png",
+      "PackagePath": "staticwebassets\\Images\\pad1.png"
+    },
+    {
+      "Id": "D:\\finaltest\\WebSiteBanLinhKienDT15\\WebsiteBanLinhKienDienTu15\\WebsiteBanLinhKienDienTu15\\wwwroot\\Images\\pad2.png",
+      "PackagePath": "staticwebassets\\Images\\pad2.png"
+    },
+    {
+      "Id": "D:\\finaltest\\WebSiteBanLinhKienDT15\\WebsiteBanLinhKienDienTu15\\WebsiteBanLinhKienDienTu15\\wwwroot\\Images\\pad3.png",
+      "PackagePath": "staticwebassets\\Images\\pad3.png"
+    },
+    {
+      "Id": "D:\\finaltest\\WebSiteBanLinhKienDT15\\WebsiteBanLinhKienDienTu15\\WebsiteBanLinhKienDienTu15\\wwwroot\\Images\\pad4.png",
+      "PackagePath": "staticwebassets\\Images\\pad4.png"
+    },
+    {
+      "Id": "D:\\finaltest\\WebSiteBanLinhKienDT15\\WebsiteBanLinhKienDienTu15\\WebsiteBanLinhKienDienTu15\\wwwroot\\Images\\pad5.png",
+      "PackagePath": "staticwebassets\\Images\\pad5.png"
+    },
+    {
+      "Id": "D:\\finaltest\\WebSiteBanLinhKienDT15\\WebsiteBanLinhKienDienTu15\\WebsiteBanLinhKienDienTu15\\wwwroot\\Images\\pc1.png",
+      "PackagePath": "staticwebassets\\Images\\pc1.png"
+    },
+    {
+      "Id": "D:\\finaltest\\WebSiteBanLinhKienDT15\\WebsiteBanLinhKienDienTu15\\WebsiteBanLinhKienDienTu15\\wwwroot\\Images\\pc2.png",
+      "PackagePath": "staticwebassets\\Images\\pc2.png"
+    },
+    {
+      "Id": "D:\\finaltest\\WebSiteBanLinhKienDT15\\WebsiteBanLinhKienDienTu15\\WebsiteBanLinhKienDienTu15\\wwwroot\\Images\\pc3.png",
+      "PackagePath": "staticwebassets\\Images\\pc3.png"
+    },
+    {
+      "Id": "D:\\finaltest\\WebSiteBanLinhKienDT15\\WebsiteBanLinhKienDienTu15\\WebsiteBanLinhKienDienTu15\\wwwroot\\Images\\relmeblack.png",
+      "PackagePath": "staticwebassets\\Images\\relmeblack.png"
+    },
+    {
+      "Id": "D:\\finaltest\\WebSiteBanLinhKienDT15\\WebsiteBanLinhKienDienTu15\\WebsiteBanLinhKienDienTu15\\wwwroot\\Images\\relmetim.png",
+      "PackagePath": "staticwebassets\\Images\\relmetim.png"
+    },
+    {
+      "Id": "D:\\finaltest\\WebSiteBanLinhKienDT15\\WebsiteBanLinhKienDienTu15\\WebsiteBanLinhKienDienTu15\\wwwroot\\Images\\rmi11p5g.jpg",
+      "PackagePath": "staticwebassets\\Images\\rmi11p5g.jpg"
+    },
+    {
+      "Id": "D:\\finaltest\\WebSiteBanLinhKienDT15\\WebsiteBanLinhKienDienTu15\\WebsiteBanLinhKienDienTu15\\wwwroot\\Images\\sgbp13.jpg",
+      "PackagePath": "staticwebassets\\Images\\sgbp13.jpg"
+    },
+    {
+      "Id": "D:\\finaltest\\WebSiteBanLinhKienDT15\\WebsiteBanLinhKienDienTu15\\WebsiteBanLinhKienDienTu15\\wwwroot\\Images\\sgbp13.png",
+      "PackagePath": "staticwebassets\\Images\\sgbp13.png"
+    },
+    {
+      "Id": "D:\\finaltest\\WebSiteBanLinhKienDT15\\WebsiteBanLinhKienDienTu15\\WebsiteBanLinhKienDienTu15\\wwwroot\\Images\\sgfl4.png",
+      "PackagePath": "staticwebassets\\Images\\sgfl4.png"
+    },
+    {
+      "Id": "D:\\finaltest\\WebSiteBanLinhKienDT15\\WebsiteBanLinhKienDienTu15\\WebsiteBanLinhKienDienTu15\\wwwroot\\Images\\sgs24u.jpg",
+      "PackagePath": "staticwebassets\\Images\\sgs24u.jpg"
+    },
+    {
+      "Id": "D:\\finaltest\\WebSiteBanLinhKienDT15\\WebsiteBanLinhKienDienTu15\\WebsiteBanLinhKienDienTu15\\wwwroot\\Images\\sgts9.jpg",
+      "PackagePath": "staticwebassets\\Images\\sgts9.jpg"
+    },
+    {
+      "Id": "D:\\finaltest\\WebSiteBanLinhKienDT15\\WebsiteBanLinhKienDienTu15\\WebsiteBanLinhKienDienTu15\\wwwroot\\Images\\sgw6.jpg",
+      "PackagePath": "staticwebassets\\Images\\sgw6.jpg"
+    },
+    {
+      "Id": "D:\\finaltest\\WebSiteBanLinhKienDT15\\WebsiteBanLinhKienDienTu15\\WebsiteBanLinhKienDienTu15\\wwwroot\\Images\\sonyblack.png",
+      "PackagePath": "staticwebassets\\Images\\sonyblack.png"
+    },
+    {
+      "Id": "D:\\finaltest\\WebSiteBanLinhKienDT15\\WebsiteBanLinhKienDienTu15\\WebsiteBanLinhKienDienTu15\\wwwroot\\Images\\sonyblack2.png",
+      "PackagePath": "staticwebassets\\Images\\sonyblack2.png"
+    },
+    {
+      "Id": "D:\\finaltest\\WebSiteBanLinhKienDT15\\WebsiteBanLinhKienDienTu15\\WebsiteBanLinhKienDienTu15\\wwwroot\\Images\\sp14e.jpg",
+      "PackagePath": "staticwebassets\\Images\\sp14e.jpg"
+    },
+    {
+      "Id": "D:\\finaltest\\WebSiteBanLinhKienDT15\\WebsiteBanLinhKienDienTu15\\WebsiteBanLinhKienDienTu15\\wwwroot\\Images\\ss21fe.jpg",
+      "PackagePath": "staticwebassets\\Images\\ss21fe.jpg"
+    },
+    {
+      "Id": "D:\\finaltest\\WebSiteBanLinhKienDT15\\WebsiteBanLinhKienDienTu15\\WebsiteBanLinhKienDienTu15\\wwwroot\\Images\\ssgreen.png",
+      "PackagePath": "staticwebassets\\Images\\ssgreen.png"
+    },
+    {
+      "Id": "D:\\finaltest\\WebSiteBanLinhKienDT15\\WebsiteBanLinhKienDienTu15\\WebsiteBanLinhKienDienTu15\\wwwroot\\Images\\sspink.png",
+      "PackagePath": "staticwebassets\\Images\\sspink.png"
+    },
+    {
+      "Id": "D:\\finaltest\\WebSiteBanLinhKienDT15\\WebsiteBanLinhKienDienTu15\\WebsiteBanLinhKienDienTu15\\wwwroot\\Images\\szflip.jpg",
+      "PackagePath": "staticwebassets\\Images\\szflip.jpg"
+    },
+    {
+      "Id": "D:\\finaltest\\WebSiteBanLinhKienDT15\\WebsiteBanLinhKienDienTu15\\WebsiteBanLinhKienDienTu15\\wwwroot\\Images\\taingheSonyWH.png",
+      "PackagePath": "staticwebassets\\Images\\taingheSonyWH.png"
+    },
+    {
+      "Id": "D:\\finaltest\\WebSiteBanLinhKienDT15\\WebsiteBanLinhKienDienTu15\\WebsiteBanLinhKienDienTu15\\wwwroot\\Images\\tainghegala.png",
+      "PackagePath": "staticwebassets\\Images\\tainghegala.png"
+    },
+    {
+      "Id": "D:\\finaltest\\WebSiteBanLinhKienDT15\\WebsiteBanLinhKienDienTu15\\WebsiteBanLinhKienDienTu15\\wwwroot\\Images\\tainghelenovo.png",
+      "PackagePath": "staticwebassets\\Images\\tainghelenovo.png"
+    },
+    {
+      "Id": "D:\\finaltest\\WebSiteBanLinhKienDT15\\WebsiteBanLinhKienDienTu15\\WebsiteBanLinhKienDienTu15\\wwwroot\\Images\\tainghesony.png",
+      "PackagePath": "staticwebassets\\Images\\tainghesony.png"
+    },
+    {
+      "Id": "D:\\finaltest\\WebSiteBanLinhKienDT15\\WebsiteBanLinhKienDienTu15\\WebsiteBanLinhKienDienTu15\\wwwroot\\Images\\vivoblue.png",
+      "PackagePath": "staticwebassets\\Images\\vivoblue.png"
+    },
+    {
+      "Id": "D:\\finaltest\\WebSiteBanLinhKienDT15\\WebsiteBanLinhKienDienTu15\\WebsiteBanLinhKienDienTu15\\wwwroot\\Images\\xiaomi11snapgrey.png",
+      "PackagePath": "staticwebassets\\Images\\xiaomi11snapgrey.png"
+    },
+    {
+      "Id": "D:\\finaltest\\WebSiteBanLinhKienDT15\\WebsiteBanLinhKienDienTu15\\WebsiteBanLinhKienDienTu15\\wwwroot\\Images\\xiaomitim.png",
+      "PackagePath": "staticwebassets\\Images\\xiaomitim.png"
+    },
+    {
+      "Id": "D:\\finaltest\\WebSiteBanLinhKienDT15\\WebsiteBanLinhKienDienTu15\\WebsiteBanLinhKienDienTu15\\wwwroot\\Images\\xiaomk.jpg",
+      "PackagePath": "staticwebassets\\Images\\xiaomk.jpg"
+    },
+    {
+      "Id": "D:\\finaltest\\WebSiteBanLinhKienDT15\\WebsiteBanLinhKienDienTu15\\WebsiteBanLinhKienDienTu15\\wwwroot\\Images\\xmi14.jpg",
+      "PackagePath": "staticwebassets\\Images\\xmi14.jpg"
+    },
+    {
+      "Id": "D:\\finaltest\\WebSiteBanLinhKienDT15\\WebsiteBanLinhKienDienTu15\\WebsiteBanLinhKienDienTu15\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "D:\\finaltest\\WebSiteBanLinhKienDT15\\WebsiteBanLinhKienDienTu15\\WebsiteBanLinhKienDienTu15\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "D:\\finaltest\\WebSiteBanLinhKienDT15\\WebsiteBanLinhKienDienTu15\\WebsiteBanLinhKienDienTu15\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "D:\\finaltest\\WebSiteBanLinhKienDT15\\WebsiteBanLinhKienDienTu15\\WebsiteBanLinhKienDienTu15\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "D:\\finaltest\\WebSiteBanLinhKienDT15\\WebsiteBanLinhKienDienTu15\\WebsiteBanLinhKienDienTu15\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "D:\\finaltest\\WebSiteBanLinhKienDT15\\WebsiteBanLinhKienDienTu15\\WebsiteBanLinhKienDienTu15\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "D:\\finaltest\\WebSiteBanLinhKienDT15\\WebsiteBanLinhKienDienTu15\\WebsiteBanLinhKienDienTu15\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "D:\\finaltest\\WebSiteBanLinhKienDT15\\WebsiteBanLinhKienDienTu15\\WebsiteBanLinhKienDienTu15\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "D:\\finaltest\\WebSiteBanLinhKienDT15\\WebsiteBanLinhKienDienTu15\\WebsiteBanLinhKienDienTu15\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "D:\\finaltest\\WebSiteBanLinhKienDT15\\WebsiteBanLinhKienDienTu15\\WebsiteBanLinhKienDienTu15\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "D:\\finaltest\\WebSiteBanLinhKienDT15\\WebsiteBanLinhKienDienTu15\\WebsiteBanLinhKienDienTu15\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "D:\\finaltest\\WebSiteBanLinhKienDT15\\WebsiteBanLinhKienDienTu15\\WebsiteBanLinhKienDienTu15\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\finaltest\\WebSiteBanLinhKienDT15\\WebsiteBanLinhKienDienTu15\\WebsiteBanLinhKienDienTu15\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "D:\\finaltest\\WebSiteBanLinhKienDT15\\WebsiteBanLinhKienDienTu15\\WebsiteBanLinhKienDienTu15\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "D:\\finaltest\\WebSiteBanLinhKienDT15\\WebsiteBanLinhKienDienTu15\\WebsiteBanLinhKienDienTu15\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "D:\\finaltest\\WebSiteBanLinhKienDT15\\WebsiteBanLinhKienDienTu15\\WebsiteBanLinhKienDienTu15\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "D:\\finaltest\\WebSiteBanLinhKienDT15\\WebsiteBanLinhKienDienTu15\\WebsiteBanLinhKienDienTu15\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "D:\\finaltest\\WebSiteBanLinhKienDT15\\WebsiteBanLinhKienDienTu15\\WebsiteBanLinhKienDienTu15\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "D:\\finaltest\\WebSiteBanLinhKienDT15\\WebsiteBanLinhKienDienTu15\\WebsiteBanLinhKienDienTu15\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "D:\\finaltest\\WebSiteBanLinhKienDT15\\WebsiteBanLinhKienDienTu15\\WebsiteBanLinhKienDienTu15\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\finaltest\\WebSiteBanLinhKienDT15\\WebsiteBanLinhKienDienTu15\\WebsiteBanLinhKienDienTu15\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "D:\\finaltest\\WebSiteBanLinhKienDT15\\WebsiteBanLinhKienDienTu15\\WebsiteBanLinhKienDienTu15\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "D:\\finaltest\\WebSiteBanLinhKienDT15\\WebsiteBanLinhKienDienTu15\\WebsiteBanLinhKienDienTu15\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "D:\\finaltest\\WebSiteBanLinhKienDT15\\WebsiteBanLinhKienDienTu15\\WebsiteBanLinhKienDienTu15\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "D:\\finaltest\\WebSiteBanLinhKienDT15\\WebsiteBanLinhKienDienTu15\\WebsiteBanLinhKienDienTu15\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "D:\\finaltest\\WebSiteBanLinhKienDT15\\WebsiteBanLinhKienDienTu15\\WebsiteBanLinhKienDienTu15\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "D:\\finaltest\\WebSiteBanLinhKienDT15\\WebsiteBanLinhKienDienTu15\\WebsiteBanLinhKienDienTu15\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "D:\\finaltest\\WebSiteBanLinhKienDT15\\WebsiteBanLinhKienDienTu15\\WebsiteBanLinhKienDienTu15\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\finaltest\\WebSiteBanLinhKienDT15\\WebsiteBanLinhKienDienTu15\\WebsiteBanLinhKienDienTu15\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "D:\\finaltest\\WebSiteBanLinhKienDT15\\WebsiteBanLinhKienDienTu15\\WebsiteBanLinhKienDienTu15\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "D:\\finaltest\\WebSiteBanLinhKienDT15\\WebsiteBanLinhKienDienTu15\\WebsiteBanLinhKienDienTu15\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\finaltest\\WebSiteBanLinhKienDT15\\WebsiteBanLinhKienDienTu15\\WebsiteBanLinhKienDienTu15\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "D:\\finaltest\\WebSiteBanLinhKienDT15\\WebsiteBanLinhKienDienTu15\\WebsiteBanLinhKienDienTu15\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "D:\\finaltest\\WebSiteBanLinhKienDT15\\WebsiteBanLinhKienDienTu15\\WebsiteBanLinhKienDienTu15\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "D:\\finaltest\\WebSiteBanLinhKienDT15\\WebsiteBanLinhKienDienTu15\\WebsiteBanLinhKienDienTu15\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "D:\\finaltest\\WebSiteBanLinhKienDT15\\WebsiteBanLinhKienDienTu15\\WebsiteBanLinhKienDienTu15\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\finaltest\\WebSiteBanLinhKienDT15\\WebsiteBanLinhKienDienTu15\\WebsiteBanLinhKienDienTu15\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "D:\\finaltest\\WebSiteBanLinhKienDT15\\WebsiteBanLinhKienDienTu15\\WebsiteBanLinhKienDienTu15\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "D:\\finaltest\\WebSiteBanLinhKienDT15\\WebsiteBanLinhKienDienTu15\\WebsiteBanLinhKienDienTu15\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "D:\\finaltest\\WebSiteBanLinhKienDT15\\WebsiteBanLinhKienDienTu15\\WebsiteBanLinhKienDienTu15\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "D:\\finaltest\\WebSiteBanLinhKienDT15\\WebsiteBanLinhKienDienTu15\\WebsiteBanLinhKienDienTu15\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "D:\\finaltest\\WebSiteBanLinhKienDT15\\WebsiteBanLinhKienDienTu15\\WebsiteBanLinhKienDienTu15\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "D:\\finaltest\\WebSiteBanLinhKienDT15\\WebsiteBanLinhKienDienTu15\\WebsiteBanLinhKienDienTu15\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "D:\\finaltest\\WebSiteBanLinhKienDT15\\WebsiteBanLinhKienDienTu15\\WebsiteBanLinhKienDienTu15\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "D:\\finaltest\\WebSiteBanLinhKienDT15\\WebsiteBanLinhKienDienTu15\\WebsiteBanLinhKienDienTu15\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "D:\\finaltest\\WebSiteBanLinhKienDT15\\WebsiteBanLinhKienDienTu15\\WebsiteBanLinhKienDienTu15\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "D:\\finaltest\\WebSiteBanLinhKienDT15\\WebsiteBanLinhKienDienTu15\\WebsiteBanLinhKienDienTu15\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "D:\\finaltest\\WebSiteBanLinhKienDT15\\WebsiteBanLinhKienDienTu15\\WebsiteBanLinhKienDienTu15\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "D:\\finaltest\\WebSiteBanLinhKienDT15\\WebsiteBanLinhKienDienTu15\\WebsiteBanLinhKienDienTu15\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\finaltest\\WebSiteBanLinhKienDT15\\WebsiteBanLinhKienDienTu15\\WebsiteBanLinhKienDienTu15\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "D:\\finaltest\\WebSiteBanLinhKienDT15\\WebsiteBanLinhKienDienTu15\\WebsiteBanLinhKienDienTu15\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "D:\\finaltest\\WebSiteBanLinhKienDT15\\WebsiteBanLinhKienDienTu15\\WebsiteBanLinhKienDienTu15\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "D:\\finaltest\\WebSiteBanLinhKienDT15\\WebsiteBanLinhKienDienTu15\\WebsiteBanLinhKienDienTu15\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "D:\\finaltest\\WebSiteBanLinhKienDT15\\WebsiteBanLinhKienDienTu15\\WebsiteBanLinhKienDienTu15\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "D:\\finaltest\\WebSiteBanLinhKienDT15\\WebsiteBanLinhKienDienTu15\\WebsiteBanLinhKienDienTu15\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "D:\\finaltest\\WebSiteBanLinhKienDT15\\WebsiteBanLinhKienDienTu15\\WebsiteBanLinhKienDienTu15\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "D:\\finaltest\\WebSiteBanLinhKienDT15\\WebsiteBanLinhKienDienTu15\\WebsiteBanLinhKienDienTu15\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\finaltest\\WebSiteBanLinhKienDT15\\WebsiteBanLinhKienDienTu15\\WebsiteBanLinhKienDienTu15\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "D:\\finaltest\\WebSiteBanLinhKienDT15\\WebsiteBanLinhKienDienTu15\\WebsiteBanLinhKienDienTu15\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "D:\\finaltest\\WebSiteBanLinhKienDT15\\WebsiteBanLinhKienDienTu15\\WebsiteBanLinhKienDienTu15\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.WebsiteBanLinhKienDienTu15.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.WebsiteBanLinhKienDienTu15.props",
+      "PackagePath": "build\\WebsiteBanLinhKienDienTu15.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.WebsiteBanLinhKienDienTu15.props",
+      "PackagePath": "buildMultiTargeting\\WebsiteBanLinhKienDienTu15.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.WebsiteBanLinhKienDienTu15.props",
+      "PackagePath": "buildTransitive\\WebsiteBanLinhKienDienTu15.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

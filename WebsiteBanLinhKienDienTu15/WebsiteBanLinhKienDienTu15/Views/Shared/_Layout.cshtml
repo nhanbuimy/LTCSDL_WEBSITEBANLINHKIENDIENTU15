@@ -1,0 +1,168 @@
+﻿@using WebsiteBanLinhKienDienTu15.Utilities
+@using Microsoft.AspNetCore.Http
+@inject IHttpContextAccessor HttpContextAccessor
+@{
+    var userRole = HttpContextAccessor.HttpContext.Session.GetString("roleName");
+    int count = 0;
+    List<CartItemVm> cartItems = HttpContextAccessor.HttpContext.Session.Get<List<CartItemVm>>("cartItems");
+    if (cartItems == null)
+    {
+        cartItems = new List<CartItemVm>();
+    }
+    count = cartItems.Sum(item => item.Quantity);
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - WebDienTu15</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/OnlineShop.styles.css" asp-append-version="true" />
+    <script src="https://kit.fontawesome.com/869c5902d1.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/alertify.min.css" />
+    <link rel="stylesheet" type="text/css" href="//cdn.datatables.net/2.0.3/css/dataTables.dataTables.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/buttons/3.0.1/css/buttons.dataTables.css" />
+
+    <style>
+        body {
+            display: grid;
+            grid-template-rows: auto 1fr auto;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+        }
+
+        main {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .content-wrapper {
+            width: 100%;
+            max-width: 1200px; /* Điều chỉnh theo ý muốn */
+            padding: 20px;
+            box-sizing: border-box;
+            background-color: #b2dfdb; /* Thay đổi màu nền */
+            border-radius: 8px; /* Thêm bo góc nếu cần */
+        }
+
+        .number {
+            color: #004d40; /* Màu xanh đậm để tương phản với nền xanh mint */
+            font-weight: bold; /* Làm nổi bật hơn */
+        }
+
+      
+        .pagination a {
+            color: #004d40; /* Màu xanh đậm để tương phản với nền xanh mint */
+            text-decoration: none;
+            margin: 0 5px;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+
+            .pagination a.active {
+                font-weight: bold;
+                background-color: #b2dfdb; /* Màu nền khi được chọn */
+                color: #004d40; /* Màu chữ khi được chọn */
+            }
+
+            .pagination a:hover {
+                background-color: #b2dfdb; /* Màu nền khi di chuột qua */
+            }
+
+        footer {
+            background-color: #000;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+        }
+    </style>
+</head>
+<body class="bg-content">
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light border-bottom box-shadow mb-3 outer-container">
+            <div class="container-fluid outer-container">
+                <a class="navbar-brand text-light" asp-area="" asp-controller="Home" asp-action="Index">ShopElectric</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div id="main-nav" class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                    <ul class="navbar-nav flex-grow-1">
+                        @if (User.IsInRole("Admin"))
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link text-light tabs" asp-area="Admin" asp-controller="Category" asp-action="Index">Category</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-light tabs" asp-area="Admin" asp-controller="SpecialTag" asp-action="Index">Brand</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-light tabs" asp-area="Admin" asp-controller="Product" asp-action="Index">Product</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-light tabs" asp-area="Admin" asp-controller="Role" asp-action="Index">Role</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-light tabs" asp-area="Customer" asp-controller="User" asp-action="Index">User</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-light tabs" asp-area="Admin" asp-controller="Order" asp-action="Index">Order</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-light tabs" asp-area="Admin" asp-controller="Stats" asp-action="Index">Stats</a>
+                            </li>
+                        }
+                        @if (User.Identity.IsAuthenticated)
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link text-light tabs" asp-area="Customer" asp-controller="Home" asp-action="Cart">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                    <span id="cart-counter" class="number">(@count)</span>
+                                </a>
+                            </li>
+                        }
+                    </ul>
+                    <partial name="_LoginPartial" />
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main role="main" class="pb-3">
+        <div class="content-wrapper">
+            @RenderBody()
+        </div>
+    </main>
+    <footer class="border-top footer text-light black-bg">
+        <div class="container">
+            &copy; 2024 - WebsiteBanLinhKienDienTu15 - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="https://cdn.datatables.net/2.0.3/js/dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/3.0.1/js/dataTables.buttons.js"></script>
+    <script src="https://cdn.datatables.net/buttons/3.0.1/js/buttons.dataTables.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.7/pdfmake.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.7/vfs_fonts.js"></script>
+    <script src="https://cdn.datatables.net/buttons/3.0.1/js/buttons.html5.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/3.0.1/js/buttons.print.min.js"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
+
+
+
+

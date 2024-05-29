@@ -1,0 +1,203 @@
+﻿@model WebsiteBanLinhKienDienTu15.Models.Product
+@{
+	ViewData["Title"] = "Details";
+}
+
+@using WebsiteBanLinhKienDienTu15.Data
+@using WebsiteBanLinhKienDienTu15.Utilities
+@using Microsoft.AspNetCore.Http
+@using System.Security.Claims
+@inject IHttpContextAccessor HttpContextAccessor
+@{
+	List<CartItemVm> cartItems = HttpContextAccessor.HttpContext.Session.Get<List<CartItemVm>>("cartItems");
+	CartItemVm cartItem = null;
+	if (cartItems != null)
+	{
+		cartItem = cartItems.FirstOrDefault(c => c.Product.ProductID == Model.ProductID);
+	}
+}
+
+<br />
+
+<h2 class="text-light">@Model.ProductName</h2>
+<form asp-action="Details" method="post" enctype="multipart/form-data">
+	<div class="p-4 rounded border row text-light fw-bold">
+		<div asp-validation-summary="ModelOnly" class="text-danger">
+		</div>
+		<div class="col-8">
+			<div class="mb-3 row">
+				<div class="col-4">
+					<label asp-for="ProductName">Product Name</label>
+				</div>
+				<div class="col-8">
+					<input type="hidden" asp-for="ProductID" />
+					<input asp-for="ProductName" readonly="readonly" class="form-control" />
+				</div>
+				<span asp-validation-for="ProductName" class="text-danger"></span>
+			</div>
+			<div class="mb-3 row">
+				<div class="col-4">
+					<label asp-for="Price"></label>
+				</div>
+				<div class="col-8">
+					<input readonly="readonly" class="form-control" value="@string.Format("{0:N0} VND", Model.Price)" />
+				</div>
+				<span asp-validation-for="Price" class="text-danger"></span>
+			</div>
+			<div class="mb-3 row">
+				<div class="col-4">
+					<label asp-for="ProductColor">Color</label>
+				</div>
+				<div class="col-8">
+					<input asp-for="ProductColor" readonly="readonly" class="form-control" />
+				</div>
+			</div>
+			<div class="mb-3 row">
+				<div class="col-4">
+					<label asp-for="CategoryID"></label>
+				</div>
+				<div class="col-8">
+					<select class="form-control" disabled>
+						<option value="@Model.CategoryID">@Model.Category.CategoryName</option>
+					</select>
+				</div>
+				<span asp-validation-for="CategoryID" class="text-danger"></span>
+			</div>
+			<div class="mb-3 row">
+				<div class="col-4">
+					<label asp-for="SpecialTagID">Brand</label>
+				</div>
+				<div class="col-8">
+					<select class="form-control" disabled>
+						<option value="@Model.SpecialTagID">@Model.SpecialTag.SpecialTagName</option>
+					</select>
+				</div>
+				<span asp-validation-for="SpecialTagID" class="text-danger"></span>
+			</div>
+			<div class="mb-3 row">
+				<div class="col-4">
+					
+				</div>
+				<div class="col-8">					
+					<div class="input-group">
+						@if (Model.IsAvailable)
+						{
+							<input id="bt_add" type="submit" class="btn btn-RedShop form-control" value="Add to Cart" />
+							<span class="input-group-btn">
+								<button id="bt_inc_dec" type="button" class="btn btn-gold" onclick="decreaseQuantity()">-</button>
+							</span>
+							<input type="number" id="quantity" name="quantity" value="1" min="1" style="width: 50px;" />
+							<span class="input-group-btn">
+								<button id="bt_inc_dec" type="button" class="btn btn-gold" onclick="increaseQuantity()">+</button>
+							</span>
+						}
+						else
+						{
+							<input class="btn btn-RedShop form-control" value="Coming soon" disabled />
+						}
+					</div>
+				</div>
+			</div>
+			<div class="mb-3">
+				<a asp-action="Index" class="btn btn-RedShop">Back to List</a>
+			</div>
+		</div>
+		<div class="col-1"></div>
+		<div class="col-3">
+			<img src="~/@Model.Image" width="100%" class="image_prod" />
+			@if (Model.IsAvailable)
+			{
+				<h5 class="text-success">Available</h5>
+			}
+			else
+			{
+				<h5 class="text-danger">Not available</h5>
+			}
+		</div>
+
+	</div>
+</form>
+
+<!-- Similar product section -->
+<br />
+<h3 class="text-light">Similar products</h3>
+<div id="similar-products-container">
+	<!-- Load danh sách sản phẩm tương tự ở đây bằng AJAX -->
+</div>
+
+
+
+
+@section Scripts {
+	@{
+		await Html.RenderPartialAsync("_ValidationScriptsPartial.cshtml");
+	}
+
+	<script src="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
+	<script type="text/javascript">
+		$(function () {
+			var msgEM = '@TempData["ErrorMessage"]'
+			var msgSM = '@TempData["SuccessMessage"]'
+			var msgDM = '@TempData["DeleteMessage"]'
+			if (msgEM) {
+				alertify.success(msgEM);
+			}
+			else if (msgSM) {
+				alertify.success(msgSM);
+			}
+			else if (msgDM) {
+				alertify.error(msgDM);
+			}
+		})
+	</script>
+
+	<script>
+		function decreaseQuantity() {
+			var quantity = document.getElementById("quantity");
+			var currentValue = parseInt(quantity.value);
+			if (currentValue > 1) {
+				quantity.value = currentValue - 1;
+			}
+		}
+
+		function increaseQuantity() {
+			var quantity = document.getElementById("quantity");
+			var currentValue = parseInt(quantity.value);
+			if (currentValue < 20) {
+				quantity.value = currentValue + 1;
+			}
+		}
+	</script>
+
+	<script>
+		// JavaScript to clear and unfocus the textarea when Cancel button is clicked
+		document.getElementById('cancelComment').addEventListener('click', function () {
+			document.getElementById('content').value = ''; // Clear the textarea
+			document.getElementById('content').style.height = 'auto'; // Reset textarea height
+			document.getElementById('content').blur(); // Unfocus the textarea
+		});
+
+		// JavaScript to adjust the height of the textarea based on the number of rows
+		document.getElementById('content').addEventListener('input', function () {
+			var textarea = this;
+			setTimeout(function () {
+				textarea.style.height = 'auto';
+				textarea.style.height = textarea.scrollHeight + 'px';
+			}, 0);
+		});
+	</script>
+
+	<script>
+		$(document).ready(function () {
+			var productId = @Model.ProductID; // ID của sản phẩm hiện tại
+			var url = '@Url.Action("SimilarProducts", "Home")' + '?productId=' + productId;
+			$.ajax({
+				url: url,
+				type: "GET",
+				success: function (data) {
+					$("#similar-products-container").html(data);
+				}
+			});
+		});
+	</script>
+}

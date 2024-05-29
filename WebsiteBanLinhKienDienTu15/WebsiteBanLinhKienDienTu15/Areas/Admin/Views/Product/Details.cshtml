@@ -1,0 +1,91 @@
+﻿@model WebsiteBanLinhKienDienTu15.Models.Product
+@{
+	ViewData["Title"] = "Details";
+}
+<br />
+
+<h2 class="text-light">Product Details</h2>
+<form asp-action="Details" method="post" enctype="multipart/form-data">
+	<div class="p-4 rounded border row text-light fw-bold">
+		<div asp-validation-summary="ModelOnly" class="text-danger">
+		</div>
+		<div class="col-8">
+			<div class="mb-3 row">
+				<div class="col-4">
+					<label asp-for="ProductName">Product Name</label>
+				</div>
+				<div class="col-8">
+					<input type="hidden" asp-for="ProductID" />
+					<input asp-for="ProductName" readonly="readonly" class="form-control" />
+				</div>
+				<span asp-validation-for="ProductName" class="text-danger"></span>
+			</div>
+			<div class="mb-3 row">
+				<div class="col-4">
+					<label asp-for="Price"></label>
+				</div>
+				<div class="col-8">
+					<input readonly="readonly" class="form-control" value="@string.Format("{0:N0} VND", Model.Price)" />
+				</div>
+				<span asp-validation-for="Price" class="text-danger"></span>
+			</div>
+			<div class="mb-3 row">
+				<div class="col-4">
+					<label asp-for="ProductColor"></label>
+				</div>
+				<div class="col-8">
+					<input asp-for="ProductColor" readonly="readonly" class="form-control" />
+				</div>
+				@* <span asp-validation-for="ProductColor" class="text-danger"></span> *@
+			</div>
+			<div class="mb-3 row">
+				<div class="col-4">
+					<label asp-for="CategoryID"></label>
+				</div>
+				<div class="col-8">
+					<select class="form-control" disabled>
+						<option value="@Model.CategoryID">@Model.Category.CategoryName</option>
+					</select>
+					@* <input asp-for="CategoryID" readonly="readonly" class="form-control" /> *@
+				</div>
+				<span asp-validation-for="CategoryID" class="text-danger"></span>
+			</div>
+			<div class="mb-3 row">
+				<div class="col-4">
+					<label asp-for="SpecialTagID">Brand</label>
+				</div>
+				<div class="col-8">
+					<select class="form-control" disabled>
+						<option value="@Model.SpecialTagID">@Model.SpecialTag.SpecialTagName</option>
+					</select>
+					@* <input asp-for="SpecialTagID" readonly="readonly" class="form-control" /> *@
+				</div>
+				<span asp-validation-for="SpecialTagID" class="text-danger"></span>
+			</div>
+			<div class="mb-3 row">
+				<div class="col-4">
+					<label asp-for="IsAvailable"></label>
+				</div>
+				<div class="col-8">
+					<input asp-for="IsAvailable" class="" type="checkbox" disabled />
+				</div>
+				<span asp-validation-for="IsAvailable" class="text-danger"></span>
+			</div>
+			<div class="mb-3">
+				<a asp-action="Edit" asp-route-id="@Model.ProductID" class="btn btn-RedShop">Edit</a>
+				<a asp-action="Index" class="btn btn-gold">Back to List</a>
+			</div>
+		</div>
+		<div class="col-1"></div>
+		<div class="col-3">
+			<img src="~/@Model.Image" width="100%" class="image_prod" />
+		</div>
+
+	</div>
+</form>
+
+@section Scripts {
+	@{
+		await Html.RenderPartialAsync("_ValidationScriptsPartial.cshtml");
+	}
+}

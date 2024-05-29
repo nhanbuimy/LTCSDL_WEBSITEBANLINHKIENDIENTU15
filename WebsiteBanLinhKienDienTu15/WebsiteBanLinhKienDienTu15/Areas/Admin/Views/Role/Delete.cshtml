@@ -1,0 +1,36 @@
+﻿@{
+	ViewData["Title"] = "Delete";
+}
+<br />
+
+<h2 class="text-light">Delete Role</h2>
+
+@if (!string.IsNullOrEmpty(ViewBag.DeleteRoleError))
+{
+	<div class="alert alert-danger">@ViewBag.DeleteRoleError</div>
+}
+
+<form asp-action="Delete" method="post" id="roleForm" enctype="multipart/form-data">
+	<div class="p-4 rounded border text-light fw-bold">
+		<div asp-validation-summary="ModelOnly" class="text-danger">
+		</div>
+		<div class="mb-3 row">
+			<div class="col-2">
+				<label>Role name</label>
+			</div>
+			<div class="col-5">
+				<input id="name" name="name" readonly="readonly" value="@ViewBag.name" class="form-control" />
+			</div>
+		</div>
+		<div class="mb-3">
+			<input type="submit" class="btn btn-RedShop" value="Delete" onclick="return confirm('Are you sure you want to delete this role?');"  />
+			<a asp-action="Index" class="btn btn-gold">Back to List</a>
+		</div>
+	</div>
+</form>
+
+@section Scripts {
+	@{
+		await Html.RenderPartialAsync("_ValidationScriptsPartial.cshtml");
+	}
+}

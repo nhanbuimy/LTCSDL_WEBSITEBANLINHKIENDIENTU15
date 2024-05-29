@@ -1,0 +1,99 @@
+﻿@model WebsiteBanLinhKienDienTu15.Models.Product
+@{
+	ViewData["Title"] = "Delete";
+}
+<br />
+
+<h2 class="text-light">Delete Product</h2>
+<form asp-action="Delete" method="post" enctype="multipart/form-data" id="deleteForm">
+	<div class="p-4 rounded border row text-light fw-bold">
+		<div asp-validation-summary="ModelOnly" class="text-danger">
+		</div>
+		<div class="col-8">
+			<div class="mb-3 row">
+				<div class="col-4">
+					<label asp-for="ProductName"></label>
+				</div>
+				<div class="col-8">
+					<input type="hidden" asp-for="ProductID" />
+					<input asp-for="ProductName" readonly="readonly" class="form-control" />
+				</div>
+				<span asp-validation-for="ProductName" class="text-danger"></span>
+			</div>
+			<div class="mb-3 row">
+				<div class="col-4">
+					<label asp-for="Price"></label>
+				</div>
+				<div class="col-8">
+					<input readonly="readonly" class="form-control" value="@string.Format("{0:N0} VND", Model.Price)" />
+				</div>
+				<span asp-validation-for="Price" class="text-danger"></span>
+			</div>
+			<div class="mb-3 row">
+				<div class="col-4">
+					<label asp-for="ProductColor"></label>
+				</div>
+				<div class="col-8">
+					<input asp-for="ProductColor" readonly="readonly" class="form-control" />
+				</div>
+			</div>
+			<div class="mb-3 row">
+				<div class="col-4">
+					<label asp-for="CategoryID"></label>
+				</div>
+				<div class="col-8">
+					<select class="form-control" disabled>
+						<option value="@Model.CategoryID">@Model.Category.CategoryName</option>
+					</select>
+					@* <input asp-for="CategoryID" readonly="readonly" class="form-control" /> *@
+				</div>
+				<span asp-validation-for="CategoryID" class="text-danger"></span>
+			</div>
+			<div class="mb-3 row">
+				<div class="col-4">
+					<label asp-for="SpecialTagID"></label>
+				</div>
+				<div class="col-8">
+					<select class="form-control" disabled>
+						<option value="@Model.SpecialTagID">@Model.SpecialTag.SpecialTagName</option>
+					</select>
+					@* <input asp-for="SpecialTagID" readonly="readonly" class="form-control" /> *@
+				</div>
+				<span asp-validation-for="SpecialTagID" class="text-danger"></span>
+			</div>
+			<div class="mb-3 row">
+				<div class="col-4">
+					<label asp-for="IsAvailable"></label>
+				</div>
+				<div class="col-8">
+					<input asp-for="IsAvailable" class="" type="checkbox" disabled />					
+				</div>
+				<span asp-validation-for="IsAvailable" class="text-danger"></span>
+			</div>
+			<div class="mb-3">
+				<input type="hidden" name="id" value="@Model.ProductID" />
+				<input type="button" onclick="confirmDelete()" asp-action="Delete" asp-route-id="@Model.ProductID" class="btn btn-RedShop" value="Delete" />
+				<a asp-action="Index" class="btn btn-gold">Back to List</a>
+			</div>
+		</div>
+		<div class="col-1"></div>
+		<div class="col-3">
+			<img src="~/@Model.Image" width="100%" class="image_prod" />
+		</div>
+
+	</div>
+</form>
+
+@section Scripts {
+	@{
+		await Html.RenderPartialAsync("_ValidationScriptsPartial.cshtml");
+	}
+
+	<script>
+		function confirmDelete() {
+			if (confirm("Are you sure you want to delete this product?")) {
+				document.getElementById("deleteForm").submit();
+			}
+		}
+	</script>
+}

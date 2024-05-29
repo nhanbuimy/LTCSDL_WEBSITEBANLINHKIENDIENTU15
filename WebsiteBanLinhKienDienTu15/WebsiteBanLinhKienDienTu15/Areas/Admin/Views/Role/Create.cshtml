@@ -1,0 +1,37 @@
+﻿@{
+	ViewData["Title"] = "Create";
+}
+<br />
+
+<h2 class="text-light">New Role</h2>
+
+@if (!string.IsNullOrEmpty(ViewBag.message))
+{
+	<div class="alert alert-danger">@ViewBag.message</div>
+}
+
+<form asp-action="Create" method="post" id="roleForm" enctype="multipart/form-data">
+	<div class="p-4 rounded border text-light fw-bold">
+		<div asp-validation-summary="ModelOnly" class="text-danger">
+		</div>
+		<br />
+		<div class="mb-3 row">
+			<div class="col-2">
+				<label>Role name</label>
+			</div>
+			<div class="col-5">
+				<input id="name" name="name" required value="@ViewBag.name" class="form-control" />
+			</div>
+		</div>
+		<div class="mb-3">
+			<input type="submit" class="btn btn-RedShop" value="Save" />
+			<a asp-action="Index" class="btn btn-gold">Back to List</a>
+		</div>
+	</div>
+</form>
+
+@section Scripts {
+	@{
+		await Html.RenderPartialAsync("_ValidationScriptsPartial.cshtml");
+	}
+}

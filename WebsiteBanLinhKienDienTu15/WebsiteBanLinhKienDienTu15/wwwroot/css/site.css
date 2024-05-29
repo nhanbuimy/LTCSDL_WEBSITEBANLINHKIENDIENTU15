@@ -1,0 +1,216 @@
+﻿html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+/*tab navigation*/
+.login-logout-card .card-header {
+    padding: 0px 0px 12px 0px;
+    height: 60px;
+    align-content: center;
+}
+
+.login-logout-card ul.nav-tabs {
+    margin: 0px 0px -12px 0px;
+}
+
+.login-logout-card li.nav-item {
+    width: 50%;
+}
+
+.login-logout-card a.nav-link {
+    font-size: 1rem;
+    color: #4A90E2; /* Màu chữ chưa click: Màu xanh dương nhạt */
+    background-color: #E0E7FF; /* Màu nền chưa click: Màu xanh nhạt */
+    text-align: center;
+    padding: 1rem;
+}
+
+    .login-logout-card a.nav-link.active {
+        font-size: 1rem;
+        color: #FFFFFF; /* Màu chữ khi đã click: Màu trắng */
+        background-color: #007BFF; /* Màu nền khi đã click: Màu xanh đậm */
+        text-align: center;
+        padding: 1rem;
+        font-weight: bold;
+    }
+
+
+.login-logout-card .card-body {
+    padding: 10px 20px;
+}
+
+#bt_white {
+    color: white;
+}
+
+#bt_inc_dec {
+    height: 100%;
+    padding: 5px;
+    width: 30px;
+}
+
+#bt_add {
+    margin-right: 20px;
+    border-radius: 5px;
+    color: white;
+}
+
+#bt_general {
+    width: 100%;
+}
+
+#main-nav {
+    /*background-color: rgba(179, 0, 71, 1);*/
+    background-color: #182e49;
+    border-radius: 15px;
+    padding: 1.5px;
+    padding-left: 5px;
+}
+
+.outer-container {
+    background-color: #2A3132;
+}
+
+li > .tabs:hover {
+    /*background-color: rgba(128, 0, 51, 1);*/
+    background-color: #528ec1;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+li > form > .tabs:hover {
+    /*background-color: rgba(128, 0, 51, 1);*/
+    background-color: rgba(60,179,113, 1);
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.redShop {
+    /*background-color: rgba(204, 0, 82, 1);*/
+    background-color: #1b4265;
+}
+
+.btn-RedShop {
+    /*background-color: rgba(204, 0, 82, 1);*/
+    background-color: coral;
+    color: white;
+}
+
+.btn-gold {
+    color: white;
+    /*background-color: goldenrod;*/
+    background-color: olivedrab;
+}
+
+.btn-black {
+    color: white;
+    /*background-color: black;*/
+    background-color: palevioletred ;
+}
+
+.btn-outline-redShop {
+    border-color: #006600;
+    color: rgba(204, 0, 82, 1);
+}
+
+.btn-outline-redShop:hover {
+    background: rgba(204, 0, 82, 1);
+    color: white;
+}
+
+.btn-outline-gold {
+    border: 1px solid goldenrod;
+    color: goldenrod;
+}
+
+.btn-outline-gold:hover {
+    /*background: goldenrod;*/
+    color: white;
+}
+
+.btn-outline-wb {
+    color: white;
+    border: 1px solid white;
+}
+
+.btn-outline-wb:hover {
+    background: white;
+    color: black;
+}
+
+
+.text-redShop {
+    color: rgba(204, 0, 82, 1);
+}
+
+.border-white {
+    border: solid;
+    border-color: white;
+    border-width: 1.5px;
+}
+
+.bg-content {
+    background-image: url("../Images/bg_nh.png");
+    background-repeat: repeat;
+}
+
+.black-bg {
+    background-color: black;
+}
+
+.gold-bg {
+    background-color: goldenrod;
+}
+
+.auth-bg {
+    background-image: url("../Images/log_bg.png");
+    border: solid;
+    border-color: white;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.image_prod {
+    border-radius: 10px;
+    border: 2px solid;
+    border-color: rgba(204, 0, 82, 1);
+}
+
+/* Data table*/
+div.dt-container {
+    color: white;
+}
+
+div.dt-container select.dt-input {
+    color: black;
+    background-color: white;
+}
+
+.dt-button {
+    color: white;
+}
+
+#chartInfo {
+    padding-top: 15px;
+}
